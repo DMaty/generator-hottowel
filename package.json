@@ -1,6 +1,6 @@
 {
   "name": "generator-hottowel-tenb",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "TenB Yeoman generator for HotTowel Angular",
   "license": "MIT",
   "main": "app/index.js",
