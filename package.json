@@ -1,17 +1,17 @@
 {
-  "name": "generator-hottowel",
-  "version": "0.4.1",
-  "description": "Yeoman generator for HotTowel Angular",
+  "name": "generator-hottowel-tenb",
+  "version": "0.4.2",
+  "description": "TenB Yeoman generator for HotTowel Angular",
   "license": "MIT",
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "johnpapa/generator-hottowel"
+    "url": "tenbridges/generator-hottowel-tenb"
   },
   "author": {
-    "name": "John Papa",
+    "name": "TenBridges",
     "email": "",
-    "url": "https://github.com/johnpapa"
+    "url": "https://github.com/tenbridges"
   },
   "engines": {
     "node": ">=0.10.0"
