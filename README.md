@@ -2,7 +2,9 @@
 
 1. ADD SASS support and suppress (but NOT delete) LESS support
 2. Migrate bower dependencies to NPM.
-3. ADD Angular Material into gulp tasks and dependencies
+3. ADD Angular Material into gulp tasks and dependencies adn suppress BOOTSTRAP
+4. Move testing from MOCHA to Jasmine and add appropriate dependencies
+
 
 This will be a work in progress as we refine our standardized generator.
 
