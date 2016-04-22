@@ -6,7 +6,7 @@
 
 This will be a work in progress as we refine our standardized generator.
 
-
+new releases (none planned at this time....)
 
 # generator-hottowel
 
