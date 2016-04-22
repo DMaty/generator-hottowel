@@ -39,7 +39,7 @@ Create an Angular application using the HotTowel style (via a [Yeoman](http://ye
 
 1. Install generator-hottowel
     ```bash
-    npm install -g generator-hottowel
+    npm install -g generator-hottowel-tenb
     ```
 
 2. Create a new folder and change directory to it
