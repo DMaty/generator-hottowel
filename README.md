@@ -1,3 +1,13 @@
+# FORK of [John Papas, Generator Hottowel](https://github.com/johnpapa/generator-hottowel) for the following purposes:
+
+1. ADD SASS support and suppress (but NOT delete) LESS support
+2. Migrate bower dependencies to NPM.
+3. ADD Angular Material into gulp tasks and dependencies
+
+This will be a work in progress as we refine our standardized generator.
+
+
+
 # generator-hottowel
 
 [![NPM version](https://img.shields.io/npm/v/generator-hottowel.svg?style=flat)](https://www.npmjs.com/package/generator-hottowel)
