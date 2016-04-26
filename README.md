@@ -1,14 +1,16 @@
 # FORK of [John Papas, Generator Hottowel](https://github.com/johnpapa/generator-hottowel) for the following purposes:
 
 1. ADD SASS support and suppress (but NOT delete) LESS support
-2. Migrate bower dependencies to NPM.
+2. Migrate bower dependencies to NPM
+3. Remove "wiredep" and "bower" pieces
 3. ADD Angular Material into gulp tasks and dependencies adn suppress BOOTSTRAP
 4. Move testing from MOCHA to Jasmine and add appropriate dependencies
+5. remove CHAI dependencies, add karma-jasmine
 
 
 This will be a work in progress as we refine our standardized generator.
 
-new releases (none planned at this time....)
+new releases (0.4.3)
 
 # generator-hottowel
 

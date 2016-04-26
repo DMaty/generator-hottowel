@@ -21,7 +21,7 @@ var HotTowelGenerator = yeoman.Base.extend({
 
   welcome: function() {
     this.log(yosay(
-      'Welcome to the HotTowel AngularJS generator!'
+      'Welcome to the TenB HotTowel AngularJS generator!'
     ));
   },
 

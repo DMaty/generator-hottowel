@@ -7,12 +7,12 @@ module.exports = function() {
   var specRunnerFile = 'specs.html';
   var temp = './.tmp/';
   var wiredep = require('wiredep');
-  var bowerFiles = wiredep({ devDependencies: true })['js'];
-  var bower = {
-    json: require('./bower.json'),
-    directory: './bower_components/',
-    ignorePath: '../..'
-  };
+  // var bowerFiles = wiredep({ devDependencies: true })['js'];
+  // var bower = {
+  //   json: require('./bower.json'),
+  //   directory: './bower_components/',
+  //   ignorePath: '../..'
+  // };
   var nodeModules = 'node_modules';
 
   var config = {
@@ -27,7 +27,7 @@ module.exports = function() {
     build: './build/',
     client: client,
     css: temp + 'styles.css',
-    fonts: bower.directory + 'font-awesome/fonts/**/*.*',
+    fonts: nodeModules + 'font-awesome/fonts/**/*.*',
     html: client + '**/*.html',
     htmltemplates: clientApp + '**/*.html',
     images: client + 'images/**/*.*',
@@ -49,7 +49,7 @@ module.exports = function() {
     server: server,
     source: 'src/',
     stubsjs: [
-      bower.directory + 'angular-mocks/angular-mocks.js',
+      nodeModules + 'angular-mocks/angular-mocks.js',
       client + 'stubs/**/*.js'
     ],
     temp: temp,
@@ -87,11 +87,11 @@ module.exports = function() {
     /**
      * Bower and NPM files
      */
-    bower: bower,
-    packages: [
-      './package.json',
-      './bower.json'
-    ],
+    // bower: bower,
+    // packages: [
+    //   './package.json',
+    //   './bower.json'
+    // ],
 
     /**
      * specs.html, our HTML spec runner
@@ -130,8 +130,8 @@ module.exports = function() {
    */
   config.getWiredepDefaultOptions = function() {
     var options = {
-      bowerJson: config.bower.json,
-      directory: config.bower.directory,
+      //bowerJson: config.bower.json,
+      directory: config.nodeModules,
       ignorePath: config.bower.ignorePath
     };
     return options;
@@ -149,7 +149,7 @@ module.exports = function() {
   function getKarmaOptions() {
     var options = {
       files: [].concat(
-        bowerFiles,
+        //bowerFiles,
         config.specHelpers,
         clientApp + '**/*.module.js',
         clientApp + '**/*.js',
