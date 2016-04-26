@@ -25,7 +25,7 @@
 ## Running HotTowel
 
 ### Linting
- - Run code analysis using `gulp vet`. This runs jshint, jscs, and plato.
+ - Run code analysis using `gulp vet`. This runs jshint, and plato.
 
 ### Tests
  - Run the unit tests using `gulp test` (via karma, mocha, sinon).
@@ -118,7 +118,7 @@ The `blocks.router` module contains a routing helper module that assists in addi
 
 - `gulp vet`
 
-    Performs static code analysis on all javascript files. Runs jshint and jscs.
+    Performs static code analysis on all javascript files. Runs jshint.
 
 - `gulp vet --verbose`
 

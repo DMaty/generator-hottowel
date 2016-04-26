@@ -6,6 +6,7 @@
 3. ADD Angular Material into gulp tasks and dependencies adn suppress BOOTSTRAP
 4. Move testing from MOCHA to Jasmine and add appropriate dependencies
 5. remove CHAI dependencies, add karma-jasmine
+6. remove jscs dependency pieces
 
 
 This will be a work in progress as we refine our standardized generator.
@@ -41,7 +42,7 @@ Create an Angular application using the HotTowel style (via a [Yeoman](http://ye
 
 ## QuickStart
 
-1. Install generator-hottowel
+1. Install generator-hottowel-tenb
     ```bash
     npm install -g generator-hottowel-tenb
     ```
@@ -54,7 +55,7 @@ Create an Angular application using the HotTowel style (via a [Yeoman](http://ye
 
 3. Run the generator
     ```bash
-    yo hottowel helloWorld
+    yo hottowel-tenb helloWorld
     ```
 
 ## HotTowel Options
@@ -101,7 +102,6 @@ The structure also contains a gulpfile.js and a server folder. The server is the
 When you generate the project it should run these commands, but if you notice missing packages, run these again:
 
  - `npm install`
- - `bower install`
 
 ### The Modules
 The app has 4 feature modules and depends on a series of external modules and custom but cross-app modules
@@ -232,13 +232,6 @@ The `blocks.router` module contains a routing helper module that assists in addi
 
     Compile less files to CSS, add vendor prefixes, and copy to the build folder
 
-### Bower Files
-
-- `gulp wiredep`
-
-    Looks up all bower components' main files and JavaScript source code, then adds them to the `index.html`.
-
-    The `.bowerrc` file also runs this as a postinstall task whenever `bower install` is run.
 
 ### Angular HTML Templates
 
