@@ -6,6 +6,7 @@
 3. ADD Angular Material into gulp tasks and dependencies adn suppress BOOTSTRAP
 4. Move testing from MOCHA to Jasmine and add appropriate dependencies
 5. remove CHAI dependencies, add karma-jasmine
+6. remove jscs dependency pieces
 
 
 This will be a work in progress as we refine our standardized generator.
@@ -41,7 +42,7 @@ Create an Angular application using the HotTowel style (via a [Yeoman](http://ye
 
 ## QuickStart
 
-1. Install generator-hottowel
+1. Install generator-hottowel-tenb
     ```bash
     npm install -g generator-hottowel-tenb
     ```
@@ -54,7 +55,7 @@ Create an Angular application using the HotTowel style (via a [Yeoman](http://ye
 
 3. Run the generator
     ```bash
-    yo hottowel helloWorld
+    yo hottowel-tenb helloWorld
     ```
 
 ## HotTowel Options

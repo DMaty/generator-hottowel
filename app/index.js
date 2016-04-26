@@ -90,7 +90,6 @@ var HotTowelGenerator = yeoman.Base.extend({
   projectfiles: function() {
     this.copy('editorconfig', '.editorconfig');
     this.copy('jshintrc', '.jshintrc');
-    this.copy('jscsrc', '.jscsrc');
     //this.copy('bowerrc', '.bowerrc');
     this.copy('gitignore', '.gitignore');
   },

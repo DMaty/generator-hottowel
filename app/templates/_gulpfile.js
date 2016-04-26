@@ -34,7 +34,7 @@ gulp.task('default', ['help']);
  * @return {Stream}
  */
 gulp.task('vet', function() {
-  log('Analyzing source with JSHint and JSCS');
+  log('Analyzing source with JSHint');
 
   return gulp
     .src(config.alljs)
@@ -42,7 +42,6 @@ gulp.task('vet', function() {
     .pipe($.jshint())
     .pipe($.jshint.reporter('jshint-stylish', { verbose: true }))
     .pipe($.jshint.reporter('fail'))
-    .pipe($.jscs());
 });
 
 /**
@@ -227,7 +226,7 @@ gulp.task('optimize', ['inject', 'test'], function() {
     .pipe(assets) // Gather all assets from the html with useref
     // Get the css
     .pipe(cssFilter)
-    .pipe($.minifyCss())
+    .pipe($.cleanCss())
     .pipe(cssFilter.restore())
     // Get the custom javascript
     .pipe(jsAppFilter)
