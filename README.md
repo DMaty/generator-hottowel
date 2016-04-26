@@ -101,7 +101,6 @@ The structure also contains a gulpfile.js and a server folder. The server is the
 When you generate the project it should run these commands, but if you notice missing packages, run these again:
 
  - `npm install`
- - `bower install`
 
 ### The Modules
 The app has 4 feature modules and depends on a series of external modules and custom but cross-app modules
@@ -232,13 +231,6 @@ The `blocks.router` module contains a routing helper module that assists in addi
 
     Compile less files to CSS, add vendor prefixes, and copy to the build folder
 
-### Bower Files
-
-- `gulp wiredep`
-
-    Looks up all bower components' main files and JavaScript source code, then adds them to the `index.html`.
-
-    The `.bowerrc` file also runs this as a postinstall task whenever `bower install` is run.
 
 ### Angular HTML Templates
 
