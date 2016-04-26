@@ -73,7 +73,7 @@ gulp.task('styles', ['clean-styles'], function() {
 
 
 gulp.task('sass:watch', function () {
-  gulp.watch('./sass/**/*.scss', ['sass']);
+  gulp.watch(config.client + '/styles/*.scss', ['sass']);
 });
 
 /**
