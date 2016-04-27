@@ -1,8 +1,8 @@
 # <%= appName %>
 
-**Generated from HotTowel Angular**
+**Generated from TenB Hottowel Angular**
 
->*Opinionated Angular style guide for teams by [@john_papa](//twitter.com/john_papa)*
+>*Forked from  style guide for teams by [@john_papa](//twitter.com/john_papa)*
 
 >More details about the styles and patterns used in this app can be found in my [Angular Style Guide](https://github.com/johnpapa/angularjs-styleguide) and my [Angular Patterns: Clean Code](http://jpapa.me/ngclean) course at [Pluralsight](http://pluralsight.com/training/Authors/Details/john-papa) and working in teams.
 
@@ -28,7 +28,7 @@
  - Run code analysis using `gulp vet`. This runs jshint, and plato.
 
 ### Tests
- - Run the unit tests using `gulp test` (via karma, mocha, sinon).
+ - Run the unit tests using `gulp test` (via karma, jasmine, sinon).
 
 ### Running in dev mode
  - Run the project with `gulp serve-dev`
@@ -57,7 +57,6 @@ The structure also contains a gulpfile.js and a server folder. The server is the
 When you generate the project it should run these commands, but if you notice missing packages, run these again:
 
  - `npm install`
- - `bower install`
 
 ### The Modules
 The app has 4 feature modules and depends on a series of external modules and custom but cross-app modules
