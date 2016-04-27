@@ -38,7 +38,7 @@ gulp.task('vet', function() {
 
   return gulp
     .src(config.alljs)
-    .pipe($.if(args.verbose, $.print()))
+    // .pipe($.if(args.verbose, $.print()))
     .pipe($.jshint())
     .pipe($.jshint.reporter('jshint-stylish', { verbose: true }))
     .pipe($.jshint.reporter('fail'))
@@ -109,7 +109,7 @@ gulp.task('templatecache', ['clean-code'], function() {
 
   return gulp
     .src(config.htmltemplates)
-    .pipe($.if(args.verbose, $.bytediff.start()))
+    /*.pipe($.if(args.verbose, $.bytediff.start()))*/
     .pipe($.minifyHtml({ empty: true }))
     .pipe($.if(args.verbose, $.bytediff.stop(bytediffFormatter)))
     .pipe($.angularTemplatecache(
@@ -306,7 +306,7 @@ gulp.task('clean-code', function(done) {
  *    gulp test --startServers
  * @return {Stream}
  */
-gulp.task('test', ['vet', 'templatecache'], function(done) {
+gulp.task('test', ['templatecache'], function(done) {
   startTests(true /*singleRun*/, done);
 });
 
